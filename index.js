@@ -17,7 +17,7 @@ const PORT = process.env.PORT
 app.use(express.urlencoded({ extended: true }));
 
 
-mongoose.connect(DB, { useNewUrlParser: true, useUnifiedTopology: true }).then(() => {
+mongoose.connect(DB).then(() => {
     console.log('database connected');
 }).catch(err => {
     console.log(err);
