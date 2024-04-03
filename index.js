@@ -1,6 +1,5 @@
 import 'dotenv/config'
 import express from "express";
-import bodyParser from "body-parser";
 import mongoose from "mongoose";
 import cors from "cors"
 import cookieParser from "cookie-parser";
@@ -15,7 +14,7 @@ import Aroute from "./routes/Aroute.js"
 const app = express();
 const DB = process.env.DB;
 const PORT = process.env.PORT
-app.use(bodyParser.urlencoded({ extended: true }));
+app.use(express.urlencoded({ extended: true }));
 
 
 mongoose.connect(DB, { useNewUrlParser: true, useUnifiedTopology: true }).then(() => {
