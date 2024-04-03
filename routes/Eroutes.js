@@ -1,7 +1,7 @@
 // routes/events.js
 import express from 'express';
-import * as eventsController from '../controllers/eventsController';
-import {checkEventorganizer} from '../middlewares/eventMiddleware';
+import * as eventsController from '../controllers/eventsController.js';
+import { checkEventorganizer } from '../middlewares/eventMiddleware.js';
 
 const router = express.Router();
 

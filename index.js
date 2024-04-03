@@ -10,6 +10,8 @@ import cookieParser from "cookie-parser";
 
 //route import
 import Aroute from "./routes/Aroute.js"
+import Eroute from "./routes/Eroutes.js"
+import Rroute from "./routes/Rroute.js"
 
 const app = express();
 const DB = process.env.DB;
@@ -30,7 +32,8 @@ app.use(cookieParser());
 
 
 app.use("/api/user", Aroute);
-
+app.use("/api/event", Eroute);
+app.use("/api/review", Rroute);
 
 app.listen(PORT, () => {
     console.log(`server is running at port ${PORT}`);

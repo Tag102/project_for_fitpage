@@ -18,4 +18,4 @@ const organizerSchema = new mongoose.Schema({
     // other organizer information fields
 });
 
-module.exports = mongoose.model('Organizer', organizerSchema);
+export default mongoose.model('Organizer', organizerSchema);

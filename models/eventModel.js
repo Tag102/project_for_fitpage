@@ -1,4 +1,4 @@
-const mongoose = require('mongoose');
+import mongoose from 'mongoose';
 
 const eventSchema = new mongoose.Schema({
     title: {
@@ -12,4 +12,4 @@ const eventSchema = new mongoose.Schema({
     location: { type: String, required: true }
 });
 
-module.exports = mongoose.model('Event', eventSchema);
+export default mongoose.model('Event', eventSchema);

@@ -1,5 +1,5 @@
 // controllers/eventsController.js
-import Event from '../models/eventModel';
+import Event from '../models/eventModel.js';
 
 // Get all events
 export const getAllEvents = async (req, res) => {
