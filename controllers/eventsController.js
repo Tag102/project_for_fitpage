@@ -28,9 +28,10 @@ export const getEventById = async (req, res) => {
 // Create a new event
 export const createEvent = async (req, res) => {
   const event = new Event({
-    name: req.body.name,
+    title: req.body.title,
     date: req.body.date,
     location: req.body.location,
+    organizer: req.user._id,
     // Add other properties as needed
   });
 
